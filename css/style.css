@@ -1,0 +1,397 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    border: 1px solid #000;
+    height: auto;
+    width: 90%;
+    margin:0 auto;
+}
+
+i.fa.fa-plus.fa-style{
+    font-size: 15px;
+    color: #000;
+}
+
+i.fa.fa-minus.fa-style{
+    font-size: 15px;
+    color: #000;
+}
+
+i.fa.fa-plus.fa-style:hover{
+    color: brown;
+}
+
+i.fa.fa-minus.fa-style:hover{
+    color: brown;
+}
+
+.wrapper_chitiet{
+    height: auto;
+    width: 90%;
+    margin:0 auto;
+}
+
+.hinhanh_sanpham{
+    float: left;
+    width: 40%;
+}
+
+.chitiet_sanpham{
+    float: left;
+    width: 45%;
+    margin:0 10px;
+}
+
+input.themgiohang{
+    border: none;
+    background: brown;
+    color: #fff;
+    padding: 12px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.header {
+    height: 280px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.header .slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease-in-out;
+}
+
+.header .slides.hidden {
+    opacity: 0;
+}
+
+.menu{
+    border: 1px solid red;
+    height: 50px;
+    width: 100%;
+    background: red;
+}
+
+ul.list_menu {
+    padding: 0;
+    width: 60%;
+    list-style: none;
+    margin: 0 auto;
+    line-height: 27px   
+}
+
+ul.list_menu li:hover {
+    background: black;
+}
+
+ul.list_menu li a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+ }
+
+ ul.list_menu li{
+    float: left;
+    margin: 7px;
+    padding: 5px;
+}
+
+#main{
+    border: 1px solid ;
+    height: 400px;
+    width: 100%;
+}
+
+.sidebar{
+    border: 1px solid #000066;
+    height: 390px;
+    width: 20%;
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;   
+    
+}
+
+ul.list_sidebar {
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    line-height: 27px  ;
+    background-color: #09aad0;
+}
+
+ul.list_sidebar li:hover {
+    background: cadetblue;
+}
+
+ul.list_sidebar li a{
+    text-decoration: none;
+    text-align: left;
+    color: #000000;
+    display: block;
+ }
+
+ ul.list_sidebar li{
+    margin: 7px;
+    padding: 5px;
+}
+
+.maincontent{
+
+    height: auto;
+    width: 78%;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: right;    
+}
+
+ul.product_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+ul.product_list li img{
+    height: 170px;
+}
+
+ul.product_list li{
+    width: 20%;
+    border: 1px solid #ddd;
+    margin: 5px;
+    float: left;
+
+    height: 300px;
+}
+
+ul.product_list li a{
+    text-decoration: none;
+}
+
+ul.product_list li img{
+    width: 100%;
+}
+
+p.title_product{
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p.price_product{
+    text-align: center;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer{
+    border: 1px solid #ff1a8c;
+    height: 100px;
+    width: 100%;
+    background: red;
+}
+
+p.footer_copyright{
+    text-align: center;
+    color: white;
+}
+
+.clear{
+    clear: both;
+}
+
+.home-sci{
+    position: absolute;
+    background-color: red;
+    bottom: -15px;
+    width: 160px;
+    display: flex;
+    right: 77px;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover{
+    color: lightblue;
+}
+
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(92, 198, 255);
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+}
+
+.form-container{
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    background: #09aad0;
+}
+
+.input-row{
+ margin-bottom: 10px;
+}
+.input-row label{
+    display: block;
+    margin-bottom: 3px;
+}
+.input-row input, textarea{
+    width: 100%;
+    padding: 8px;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    margin-bottom: 3px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.input-row textarea{
+    height: 55px;
+}
+.input-row input[type="submit"]{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    background: #002f3a;
+}
+.success{
+    background: #9fd2a1;
+    padding: 5px 10px;
+    text-align: center;
+    color: #326b07;
+    border-radius: 3px;
+    font-synthesis: 14px;
+    margin-top: 10px;
+}
+
+/*----------------------------------------*/
+
+
+ul.product_list li img {
+    width: 100%;
+    height: 170px;
+    transition: transform 0.3s ease-in-out;
+}
+
+ul.product_list li:hover img {
+    transform: scale(1.05); /* Phóng to hình ảnh khi hover */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.header {
+    height: 280px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+p.title_product:hover {
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.sidebar {
+    border: 1px solid #000066;
+    height: 390px;
+    width: 20%;
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+input.themgiohang:hover {
+    animation: pulse 0.6s infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
